@@ -1,0 +1,25 @@
+Host sample-web01
+ HostName localhost
+ User deploy
+ Port 33301
+ IdentityFile .secret/id_rsa
+ StrictHostKeyChecking no
+Host sample-web02
+ HostName localhost
+ User deploy
+ Port 33302
+ IdentityFile .secret/id_rsa
+ StrictHostKeyChecking no
+
+Host sample-db01
+ HostName localhost
+ User deploy
+ Port 44401
+ IdentityFile .secret/id_rsa
+ StrictHostKeyChecking no
+Host sample-db02
+ HostName localhost
+ User deploy
+ Port 44402
+ IdentityFile .secret/id_rsa
+ StrictHostKeyChecking no

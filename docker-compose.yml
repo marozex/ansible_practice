@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  sample-web01:
+    build: .
+    privileged: true
+    tty: true
+    command: /sbin/init
+    ports:
+      - "33301:22"
+  sample-web02:
+    build: .
+    privileged: true
+    tty: true
+    command: /sbin/init
+    ports:
+      - "33302:22"
+
+  sample-db01:
+    build: .
+    privileged: true
+    tty: true
+    command: /sbin/init
+    ports:
+      - "44401:22"
+  sample-db02:
+    build: .
+    privileged: true
+    tty: true
+    command: /sbin/init
+    ports:
+      - "44402:22"
