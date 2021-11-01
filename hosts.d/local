@@ -5,3 +5,10 @@ sample-web02
 [db]
 sample-db01
 sample-db02
+
+;以下はkafka quickstart検証用 
+[kafka]
+sample-web01
+
+[zookeeper]
+sample-web02
